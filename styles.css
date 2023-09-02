@@ -13,7 +13,7 @@ body {
     display: flex;
     height: 100vh;
     flex-wrap: wrap;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .image-container {
@@ -68,13 +68,16 @@ img {
     background-color: white;
 }
 
+.form h2 {
+    margin-top: -25px;
+}
+
 .form-inputs {
     margin-top: 20px;
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 .form-inputs div {
@@ -90,6 +93,61 @@ img {
     padding-left: 50px;
 }
 
-a:visited {
+.image-container-credit a:visited {
     color: white;
+}
+
+.submit-container {
+    padding: 50px;
+}
+
+.submit-container button {
+    cursor: pointer;
+    border: none;
+    border-radius: .5rem;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 2px 5px rgb(0, 0, 0);
+    padding: 1em 3em;
+}
+
+.footer {
+    padding-left: 50px;
+}
+
+.footer a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-container {
+    position: relative;
+}
+
+.error-msg::after {
+    content: "*Passwords do not match";
+    font-size: .75rem;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    color: red;
+}
+
+input {
+    padding: 5px 20px 5px 10px;
+    appearance: none;
+    border: 1px solid #E5E7EB;
+    outline: none;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 1px 1px 3px;
 }

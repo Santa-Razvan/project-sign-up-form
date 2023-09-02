@@ -28,11 +28,11 @@
         </div>
         <form action="#">
             <div class="form">
-                <h1>Let's do this!</h1>
+                <h2>Let's do this!</h2>
                 <div class="form-inputs">
                     <div>
                         <label for="surname">FIRST NAME</label><br>
-                        <input type="text" id="surname" name="surname" required>
+                        <input type="text" id="surname" name="surname" required autofocus>
                     </div>
                     <div>
                         <label for="lastname">LAST NAME</label><br>
@@ -46,21 +46,22 @@
                         <label for="tel">PHONE NUMBER</label><br>
                         <input type="tel" name="tel" id="tel" required>
                     </div>
-                    <div>
+                    <div class="error-container">
                         <label for="pass">PASSWORD</label><br>
-                        <input type="password" id="pass" name="password" required>
+                        <input type="password" id="pass" name="password" required class="error">
+                        <span class="error-msg"></span>
                     </div>
                     <div>
                         <label for="conpass">CONFIRM PASSWORD</label><br>
-                        <input type="password" id="conpass" name="conpassword" required>
+                        <input type="password" id="conpass" name="conpassword" required class="error">
                     </div>
                 </div>
             </div>
-            <div style="padding: 50px;">
+            <div class="submit-container">
                 <button type="submit">Create Account</button>
             </div>
         </form>
-        <p style="padding-left: 50px;">Already have an account? <a href="#">Log in</a></p>
+        <p class="footer">Already have an account? <a href="#">Log in</a></p>
     </div>
 </body>
 
