@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="image-container">
+        <div class="logo-container">
+            <img src="./images/odin-lined.png" alt="odin logo, a very nice logo">
+            <p class="logo">ODIN</p>
+        </div>
+        <p class="image-container-credit">
+            Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a
+                href="https://unsplash.com/">Unsplash</a>
+        </p>
+    </div>
+    <div class="form-container">
+        <div class="info">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams. Sign up now to get started.
+                <br><br>You <i>know</i> you want to.
+            </p>
+        </div>
+        <form action="#">
+            <div class="form">
+                <h1>Let's do this!</h1>
+                <div class="form-inputs">
+                    <div>
+                        <label for="surname">FIRST NAME</label><br>
+                        <input type="text" id="surname" name="surname" required>
+                    </div>
+                    <div>
+                        <label for="lastname">LAST NAME</label><br>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label><br>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="tel">PHONE NUMBER</label><br>
+                        <input type="tel" name="tel" id="tel" required>
+                    </div>
+                    <div>
+                        <label for="pass">PASSWORD</label><br>
+                        <input type="password" id="pass" name="password" required>
+                    </div>
+                    <div>
+                        <label for="conpass">CONFIRM PASSWORD</label><br>
+                        <input type="password" id="conpass" name="conpassword" required>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 50px;">
+                <button type="submit">Create Account</button>
+            </div>
+        </form>
+        <p style="padding-left: 50px;">Already have an account? <a href="#">Log in</a></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'norse';
+    src: url("./fonts/Norse-Bold.otf") format('opentype');
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image-container {
+    background: url(./images/halie-west-25xggax4bSA-unsplash.jpg), no-repeat, center, center, fixed;
+    background-size: cover;
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    padding: 10px;
+    align-self: center;
+    margin-top: 30%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+img {
+    height: auto;
+}
+
+.logo {
+    font-family: 'norse';
+    font-size: 6.5rem;
+    align-self: center;
+}
+
+.image-container-credit {
+    position: absolute;
+    top: 95%;
+    align-self: center;
+    color: white;
+}
+
+.form-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+}
+
+.form {
+    padding: 50px;
+    border: 0.5px solid rgb(240, 240, 240);
+    box-shadow: 1px 3px 5px rgb(210, 210, 210);
+    background-color: white;
+}
+
+.form-inputs {
+    margin-top: 20px;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.form-inputs div {
+    margin-top: 20px;
+}
+
+.info p {
+    margin-top: 7%;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 1.75rem;
+    width: 60ch;
+    padding-left: 50px;
+}
+
+a:visited {
+    color: white;
+}
