@@ -26,7 +26,7 @@
                 <br><br>You <i>know</i> you want to.
             </p>
         </div>
-        <form action="#">
+        <form action="#" id="sign-up">
             <div class="form">
                 <h2>Let's do this!</h2>
                 <div class="form-inputs">
@@ -48,12 +48,12 @@
                     </div>
                     <div class="error-container">
                         <label for="pass">PASSWORD</label><br>
-                        <input type="password" id="pass" name="password" required class="error">
-                        <span class="error-msg"></span>
+                        <input type="password" id="pass" name="password" required>
+                        <span id="error-msg"></span>
                     </div>
                     <div>
                         <label for="conpass">CONFIRM PASSWORD</label><br>
-                        <input type="password" id="conpass" name="conpassword" required class="error">
+                        <input type="password" id="conpass" name="conpassword" required>
                     </div>
                 </div>
             </div>
@@ -63,6 +63,7 @@
         </form>
         <p class="footer">Already have an account? <a href="#">Log in</a></p>
     </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>
